@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Estética & Hospedagem | Pré e Pós-Operatório de Luxo</title>
-    
+
     <!-- SEO & Open Graph -->
-    <meta name="description" content="Especialista em estética e hospedagem para pré e pós-operatório. Cuidado humanizado, conforto e recuperação assistida em Goiânia.">
+    <meta name="description"
+        content="Especialista em estética e hospedagem para pré e pós-operatório. Cuidado humanizado, conforto e recuperação assistida em Goiânia.">
     <meta property="og:title" content="Maria Estética & Hospedagem">
     <meta property="og:description" content="Recuperação segura e estética avançada com atendimento exclusivo.">
     <meta property="og:type" content="website">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Frameworks -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net" />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.css" />
+
     <script>
         tailwind.config = {
             theme: {
@@ -40,17 +42,36 @@
     </script>
 
     <style>
-        :root { --accent-gradient: linear-gradient(135deg, #40E0D0, #2E8B57); }
-        body { background-color: #0a0a0a; color: #f8f8f8; overflow-x: hidden; }
-        
-        /* Loader */
-        #loader {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: #0a0a0a; z-index: 9999; display: flex; align-items: center; justify-content: center;
+        :root {
+            --accent-gradient: linear-gradient(135deg, #40E0D0, #2E8B57);
         }
 
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        
+        body {
+            background-color: #0a0a0a;
+            color: #f8f8f8;
+            overflow-x: hidden;
+        }
+
+        /* Loader */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a0a0a;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
         .text-gradient {
             background: var(--accent-gradient);
             -webkit-background-clip: text;
@@ -58,16 +79,45 @@
         }
 
         /* Marquee */
-        .marquee-content { display: flex; animation: marquee 20s linear infinite; }
-        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .marquee-content {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
         /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0a0a0a; }
-        ::-webkit-scrollbar-thumb { background: #40E0D0; border-radius: 10px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #40E0D0;
+            border-radius: 10px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 
     <!-- Schema.org -->
@@ -88,6 +138,7 @@
     }
     </script>
 </head>
+
 <body class="antialiased">
 
     <!-- Loader -->
@@ -115,16 +166,22 @@
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-black/60 z-10"></div>
-            <img src="https://images.unsplash.com" alt="Ambiente Estética Luxo" class="w-full h-full object-cover scale-105 animate-slow-zoom">
+            <img src="https://images.unsplash.com" alt="Ambiente Estética Luxo"
+                class="w-full h-full object-cover scale-105 animate-slow-zoom">
         </div>
         <div class="relative z-20 text-center px-4 max-w-4xl">
-            <h1 class="font-serif text-5xl md:text-7xl mb-6 leading-tight reveal">A Arte de Cuidar da sua <span class="text-gradient">Recuperação</span></h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-10 reveal">Estética avançada e hospedagem exclusiva para pós-operatório com assistência 24h.</p>
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 leading-tight reveal">A Arte de Cuidar da sua <span
+                    class="text-gradient">Recuperação</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 reveal">Estética avançada e hospedagem exclusiva para
+                pós-operatório com assistência 24h.</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center reveal">
-                <a href="https://wa.me" class="bg-turquesa text-dark font-bold px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-white transition duration-300">
+                <a href="https://wa.me"
+                    class="bg-turquesa text-dark font-bold px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-white transition duration-300">
                     <i data-lucide="message-circle"></i> Agendar Consultoria
                 </a>
-                <a href="#servicos" class="border border-white/30 glass px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">Ver Serviços</a>
+                <a href="#servicos"
+                    class="border border-white/30 glass px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">Ver
+                    Serviços</a>
             </div>
         </div>
     </section>
@@ -152,18 +209,25 @@
     <section id="sobre" class="py-24 px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div class="reveal">
-                <span class="text-turquesa font-bold tracking-widest text-sm uppercase">Bem-vinda à Maria Estética</span>
+                <span class="text-turquesa font-bold tracking-widest text-sm uppercase">Bem-vinda à Maria
+                    Estética</span>
                 <h2 class="font-serif text-4xl md:text-5xl mt-4 mb-6">Excelência técnica e acolhimento humano.</h2>
-                <p class="text-gray-400 leading-relaxed mb-8">Com anos de experiência no segmento de saúde e beleza, oferecemos um suporte completo para quem busca resultados estéticos impecáveis e uma recuperação cirúrgica segura. Nosso espaço foi projetado para ser o seu refúgio durante o pós-operatório.</p>
+                <p class="text-gray-400 leading-relaxed mb-8">Com anos de experiência no segmento de saúde e beleza,
+                    oferecemos um suporte completo para quem busca resultados estéticos impecáveis e uma recuperação
+                    cirúrgica segura. Nosso espaço foi projetado para ser o seu refúgio durante o pós-operatório.</p>
                 <ul class="space-y-4">
-                    <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-verde"></i> Monitoramento 24h</li>
-                    <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-verde"></i> Alimentação balanceada</li>
-                    <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-verde"></i> Protocolos personalizados</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-verde"></i>
+                        Monitoramento 24h</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-verde"></i>
+                        Alimentação balanceada</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle" class="text-verde"></i> Protocolos
+                        personalizados</li>
                 </ul>
             </div>
             <div class="relative reveal">
                 <div class="absolute -inset-4 border border-turquesa/20 rounded-2xl"></div>
-                <img src="https://images.unsplash.com" alt="Atendimento Profissional" class="rounded-2xl shadow-2xl relative z-10 grayscale hover:grayscale-0 transition duration-700">
+                <img src="https://images.unsplash.com" alt="Atendimento Profissional"
+                    class="rounded-2xl shadow-2xl relative z-10 grayscale hover:grayscale-0 transition duration-700">
             </div>
         </div>
     </section>
@@ -181,7 +245,8 @@
                     <i data-lucide="home" class="text-turquesa"></i>
                 </div>
                 <h3 class="text-2xl font-serif mb-4">Hospedagem Pós-Cirúrgica</h3>
-                <p class="text-gray-400">Suítes adaptadas com suporte integral para sua total tranquilidade e segurança.</p>
+                <p class="text-gray-400">Suítes adaptadas com suporte integral para sua total tranquilidade e segurança.
+                </p>
             </div>
             <!-- Card 2 -->
             <div class="glass p-8 rounded-3xl reveal hover:border-verde/50 transition duration-500">
@@ -197,7 +262,8 @@
                     <i data-lucide="heart-pulse" class="text-turquesa"></i>
                 </div>
                 <h3 class="text-2xl font-serif mb-4">Acompanhamento Pré-Op</h3>
-                <p class="text-gray-400">Preparação da pele e tecidos para garantir o melhor resultado na mesa de cirurgia.</p>
+                <p class="text-gray-400">Preparação da pele e tecidos para garantir o melhor resultado na mesa de
+                    cirurgia.</p>
             </div>
         </div>
     </section>
@@ -205,10 +271,14 @@
     <!-- Galeria -->
     <section id="galeria" class="py-24 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="https://images.unsplash.com" class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
-            <img src="https://images.unsplash.com" class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
-            <img src="https://images.unsplash.com" class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
-            <img src="https://images.unsplash.com" class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
+            <img src="https://images.unsplash.com"
+                class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
+            <img src="https://images.unsplash.com"
+                class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
+            <img src="https://images.unsplash.com"
+                class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
+            <img src="https://images.unsplash.com"
+                class="aspect-square object-cover rounded-xl reveal cursor-pointer hover:opacity-80">
         </div>
     </section>
 
@@ -218,12 +288,14 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide text-center">
                     <div class="mb-8 flex justify-center text-turquesa"><i data-lucide="quote" size="48"></i></div>
-                    <p class="text-2xl font-serif italic mb-6">"O cuidado da Maria foi essencial na minha abdominoplastia. Me senti em casa e muito segura."</p>
+                    <p class="text-2xl font-serif italic mb-6">"O cuidado da Maria foi essencial na minha
+                        abdominoplastia. Me senti em casa e muito segura."</p>
                     <h4 class="font-bold">— Ana Paula S.</h4>
                 </div>
                 <div class="swiper-slide text-center">
                     <div class="mb-8 flex justify-center text-turquesa"><i data-lucide="quote" size="48"></i></div>
-                    <p class="text-2xl font-serif italic mb-6">"Melhor estrutura de Goiânia para pós-operatório. A drenagem é simplesmente perfeita!"</p>
+                    <p class="text-2xl font-serif italic mb-6">"Melhor estrutura de Goiânia para pós-operatório. A
+                        drenagem é simplesmente perfeita!"</p>
                     <h4 class="font-bold">— Carla Ferreira</h4>
                 </div>
             </div>
@@ -241,7 +313,8 @@
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="max-h-0 overflow-hidden transition-all duration-300 accordion-content">
-                    <p class="p-6 text-gray-400">A reserva deve ser feita com antecedência mínima de 15 dias da data da cirurgia para garantir vaga em nossas suítes.</p>
+                    <p class="p-6 text-gray-400">A reserva deve ser feita com antecedência mínima de 15 dias da data da
+                        cirurgia para garantir vaga em nossas suítes.</p>
                 </div>
             </div>
             <div class="glass rounded-2xl overflow-hidden">
@@ -250,7 +323,8 @@
                     <i data-lucide="chevron-down"></i>
                 </button>
                 <div class="max-h-0 overflow-hidden transition-all duration-300 accordion-content">
-                    <p class="p-6 text-gray-400">Atendemos as principais cirurgias plásticas: Lipoaspiração, Abdominoplastia, Mastopexia e Facelift.</p>
+                    <p class="p-6 text-gray-400">Atendemos as principais cirurgias plásticas: Lipoaspiração,
+                        Abdominoplastia, Mastopexia e Facelift.</p>
                 </div>
             </div>
         </div>
@@ -261,7 +335,8 @@
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
             <div class="reveal">
                 <h2 class="font-serif text-4xl mb-6">Solicite seu <span class="text-gradient">Orçamento</span></h2>
-                <p class="text-gray-400 mb-8">Preencha o formulário e nossa equipe entrará em contato para alinhar os detalhes da sua estadia ou tratamento.</p>
+                <p class="text-gray-400 mb-8">Preencha o formulário e nossa equipe entrará em contato para alinhar os
+                    detalhes da sua estadia ou tratamento.</p>
                 <div class="flex flex-col gap-4">
                     <div class="flex items-center gap-4 text-gray-300">
                         <i data-lucide="map-pin" class="text-turquesa"></i> Goiânia, Goiás
@@ -272,17 +347,22 @@
                 </div>
             </div>
             <form action="https://formspree.io" method="POST" class="space-y-4 reveal">
-                <input type="text" name="nome" placeholder="Seu Nome" required class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-turquesa outline-none transition">
-                <input type="email" name="email" placeholder="Seu E-mail" required class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-turquesa outline-none transition">
-                <textarea name="mensagem" placeholder="Fale sobre seu procedimento" rows="4" class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-turquesa outline-none transition"></textarea>
-                <button type="submit" class="w-full py-4 bg-gradient-to-r from-turquesa to-verde text-dark font-bold rounded-xl hover:opacity-90 transition">Enviar Mensagem</button>
+                <input type="text" name="nome" placeholder="Seu Nome" required
+                    class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-turquesa outline-none transition">
+                <input type="email" name="email" placeholder="Seu E-mail" required
+                    class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-turquesa outline-none transition">
+                <textarea name="mensagem" placeholder="Fale sobre seu procedimento" rows="4"
+                    class="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-turquesa outline-none transition"></textarea>
+                <button type="submit"
+                    class="w-full py-4 bg-gradient-to-r from-turquesa to-verde text-dark font-bold rounded-xl hover:opacity-90 transition">Enviar
+                    Mensagem</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-12 border-t border-white/10 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-xl font-serif font-bold text-gradient">MARIA ESTÉTICA</div>
             <div class="flex gap-6">
                 <a href="#" class="hover:text-turquesa transition"><i data-lucide="instagram"></i></a>
@@ -293,7 +373,9 @@
     </footer>
 
     <!-- Botão WhatsApp -->
-    <a href="https://wa.me" class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me"
+        class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center"
+        target="_blank" aria-label="WhatsApp">
         <i data-lucide="message-circle" class="w-8 h-8"></i>
     </a>
 
@@ -345,7 +427,7 @@
             btn.addEventListener('click', () => {
                 const content = btn.nextElementSibling;
                 const icon = btn.querySelector('i');
-                
+
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
                     icon.style.transform = 'rotate(0deg)';
@@ -357,4 +439,5 @@
         });
     </script>
 </body>
+
 </html>
