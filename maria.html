@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Estética & Hospedagem | Pós-Operatório de Luxo</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Especialista em estética e hospedagem para pós-operatório em Goiânia.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper CSS (Carrossel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#050505',
+                        turquesa: '#40E0D0',
+                        verde: '#2E8B57',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos Customizados Cinematográficos */
+        body {
+            background-color: #050505;
+            color: #ffffff;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #40E0D0, #2E8B57);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Loader */
+        #loader {
+            position: fixed;
+            inset: 0;
+            background: #050505;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Marquee */
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            display: flex;
+        }
+
+        .marquee-content {
+            display: inline-flex;
+            animation: scroll 25s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Scroll Animação */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="w-12 h-12 border-2 border-turquesa border-t-transparent rounded-full animate-spin"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 px-6 py-5 transition-all duration-500" id="nav">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold tracking-widest text-gradient">MARIA ESTÉTICA</div>
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-[0.3em] font-light">
+                <a href="#sobre" class="hover:text-turquesa transition">Sobre</a>
+                <a href="#servicos" class="hover:text-turquesa transition">Serviços</a>
+                <a href="#contato" class="hover:text-turquesa transition">Contato</a>
+            </div>
+            <a href="https://wa.me"
+                class="text-xs border border-turquesa/40 px-5 py-2 rounded-full hover:bg-turquesa hover:text-dark transition">RESERVAR
+                AGORA</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/70 z-10"></div>
+            <img src="https://images.unsplash.com" class="w-full h-full object-cover" alt="Hero">
+        </div>
+
+        <div class="relative z-20 max-w-4xl reveal">
+            <span class="text-turquesa tracking-[0.5em] uppercase text-sm mb-4 block">Exclusividade & Cuidado</span>
+            <h1 class="text-5xl md:text-8xl font-serif mb-8 leading-tight">Sua recuperação em um <br> <span
+                    class="italic font-light">refúgio de luxo.</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">Especialistas em
+                pós-operatório assistido com conforto hospitalar e hospitalidade 5 estrelas.</p>
+            <a href="https://wa.me"
+                class="inline-flex items-center gap-3 bg-white text-dark px-10 py-5 rounded-full font-bold hover:bg-turquesa transition-all duration-300">
+                FALAR COM ESPECIALISTA <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="bg-white/5 py-6 border-y border-white/10">
+        <div class="marquee">
+            <div class="marquee-content gap-12 text-sm uppercase tracking-widest text-white/40 font-light">
+                <span>Drenagem Linfática</span> <span>•</span>
+                <span>Hospedagem 24h</span> <span>•</span>
+                <span>Liberação Tecidual</span> <span>•</span>
+                <span>Enfermagem Especializada</span> <span>•</span>
+                <span>Nutrição Pós-Cirúrgica</span> <span>•</span>
+                <!-- Duplicate for loop -->
+                <span>Drenagem Linfática</span> <span>•</span>
+                <span>Hospedagem 24h</span> <span>•</span>
+                <span>Liberação Tecidual</span> <span>•</span>
+                <span>Enfermagem Especializada</span> <span>•</span>
+                <span>Nutrição Pós-Cirúrgica</span> <span>•</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="reveal">
+                <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-tight">Onde a ciência encontra o acolhimento.
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-8">Na Maria Estética, entendemos que o sucesso de uma
+                    cirurgia depende 50% do procedimento e 50% da recuperação. Oferecemos um ambiente controlado, seguro
+                    e extremamente luxuoso para garantir que seus resultados sejam potencializados.</p>
+                <div class="grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
+                    <div>
+                        <h4 class="text-turquesa text-2xl font-serif">10+ Anos</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest mt-2">De Experiência</p>
+                    </div>
+                    <div>
+                        <h4 class="text-verde text-2xl font-serif">24 Horas</h4>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest mt-2">De Assistência</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative reveal h-[500px]">
+                <img src="https://images.unsplash.com"
+                    class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
+                    alt="Sobre">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="py-32 bg-[#080808]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl font-serif mb-4">Serviços Premium</h2>
+                <div class="h-[1px] w-20 bg-turquesa mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card -->
+                <div class="glass-card p-10 rounded-3xl hover:-translate-y-2 transition-all duration-500 reveal">
+                    <i data-lucide="bed" class="text-turquesa mb-6" size="40"></i>
+                    <h3 class="text-2xl font-serif mb-4">Hospedagem VIP</h3>
+                    <p class="text-gray-500 font-light leading-relaxed">Suítes completas com cama hospitalar de luxo,
+                        poltrona de descanso e acompanhamento de enfermagem.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl hover:-translate-y-2 transition-all duration-500 reveal">
+                    <i data-lucide="framer" class="text-verde mb-6" size="40"></i>
+                    <h3 class="text-2xl font-serif mb-4">Estética Avançada</h3>
+                    <p class="text-gray-500 font-light leading-relaxed">Protocolos de drenagem linfática manual e uso de
+                        tecnologias para acelerar a cicatrização.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl hover:-translate-y-2 transition-all duration-500 reveal">
+                    <i data-lucide="shield-check" class="text-turquesa mb-6" size="40"></i>
+                    <h3 class="text-2xl font-serif mb-4">Segurança Total</h3>
+                    <p class="text-gray-500 font-light leading-relaxed">Monitoramento de sinais vitais, curativos e
+                        controle rigoroso de medicações conforme prescrição médica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-32 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-serif mb-12 text-center reveal">Dúvidas Frequentes</h2>
+        <div class="space-y-4">
+            <details class="glass-card rounded-2xl group">
+                <summary
+                    class="list-none p-6 flex justify-between items-center cursor-pointer font-medium tracking-wide">
+                    Quais cirurgias vocês atendem?
+                    <i data-lucide="plus" class="group-open:rotate-45 transition-transform"></i>
+                </summary>
+                <div class="p-6 pt-0 text-gray-400 font-light leading-relaxed border-t border-white/5">
+                    Atendemos todas as cirurgias plásticas: Lipoaspiração, Abdominoplastia, Mamoplastia, Rinoplastia e
+                    cirurgias faciais.
+                </div>
+            </details>
+            <!-- Outros itens seguem o mesmo padrão -->
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section id="contato" class="py-32 px-6">
+        <div class="max-w-2xl mx-auto glass-card p-8 md:p-16 rounded-[40px] reveal">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-serif mb-4">Entre em Contato</h2>
+                <p class="text-gray-500">Respondemos em menos de 1 hora.</p>
+            </div>
+            <form action="https://formspree.io" method="POST" class="space-y-6">
+                <input type="text" name="name" placeholder="Nome Completo" required
+                    class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-turquesa transition">
+                <input type="tel" name="phone" placeholder="WhatsApp" required
+                    class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-turquesa transition">
+                <textarea name="message" placeholder="Como podemos te ajudar?" rows="4"
+                    class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 outline-none focus:border-turquesa transition"></textarea>
+                <button
+                    class="w-full py-5 bg-gradient-to-r from-turquesa to-verde text-dark font-bold rounded-xl tracking-widest hover:scale-[1.02] transition-all">ENVIAR
+                    SOLICITAÇÃO</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-3xl font-serif font-bold text-gradient mb-8">MARIA ESTÉTICA</div>
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="#" class="text-gray-500 hover:text-white transition">Instagram</a>
+                <a href="#" class="text-gray-500 hover:text-white transition">WhatsApp</a>
+                <a href="#" class="text-gray-500 hover:text-white transition">Goiânia - GO</a>
+            </div>
+            <p class="text-[10px] text-gray-600 tracking-[0.3em] uppercase">© 2024 Maria Estética & Hospedagem.
+                Desenvolvido com sofisticação.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me"
+        class="fixed bottom-10 right-10 z-[100] bg-[#25D366] p-5 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <i data-lucide="message-circle" class="text-white"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com"></script>
+    <script>
+        // Inicia ícones
+        lucide.createIcons();
+
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(() => loader.style.display = 'none', 500);
+        });
+
+        // Navbar Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-black/80', 'backdrop-blur-xl', 'py-3');
+            } else {
+                nav.classList.remove('bg-black/80', 'backdrop-blur-xl', 'py-3');
+            }
+        });
+
+        // Intersection Observer (Animações ao rolar)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
